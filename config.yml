@@ -1,0 +1,19 @@
+# dofus
+dofus_version: '1.29.1'
+dofus_enable_subscription: false
+
+# communication (with dofus client)
+communication:
+    dofus_client:
+        ip: '127.0.0.1'
+        port: 444
+
+# database
+database:
+    # connection
+    host: '127.0.0.1'
+    user: 'root'
+    password: ''
+
+    # database name
+    name: 'hetwanpy_realmserver'

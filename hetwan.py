@@ -1,8 +1,7 @@
-from src.realmserver.core.hetwan import Core
+from src.core.hetwan import Core
 
 def main():
-	core = Core()
-	core.start()
+	Core().start()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
 	main()
