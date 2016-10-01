@@ -2,7 +2,7 @@ import logging, sys
 
 from enum import Enum
 
-from src.network.login.socket_server import SocketServer
+from src.network.login.login_server import LoginServer
 from src.tools.database import Database
 from src.tools.configuration import Configuration
 
@@ -38,8 +38,8 @@ class Core:
 
 		try:
 			logging.info('Creating socket server...')
-			socket_server = SocketServer(Configuration.communication['dofus_client']['ip'], Configuration.communication['dofus_client']['port'], 10)
-			logging.debug('Shhttt ! Listening for some connections...')
+			socket_server = LoginServer()
+			logging.debug('Shhhhhttt ! Listening for some connections...')
 			socket_server.start()
 		except Exception as e:
 			logging.error('Error on running: %s' % format(e))
